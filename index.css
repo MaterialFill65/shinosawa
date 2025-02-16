@@ -1,0 +1,48 @@
+.object{
+    position: absolute;
+}
+
+.nabiku{
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: real_nabiku 3s ease-in-out infinite;
+}
+
+@keyframes nabikaseru {
+    0% {
+        transform: rotate3d(0, 0, 0, 60deg);
+    }
+    33%{
+        transform: rotate3d(0, 1, 1, 10deg);
+    }
+    66%{
+        transform: rotate3d(0, -1, -1, 10deg);
+    }
+    100%{
+        transform: rotate3d(0, 0, 0, 60deg);
+    }
+}
+
+@keyframes real_nabiku {
+    0% {
+        transform: rotate3d(0, 0, 0, 60deg);
+    }
+    33%{
+        transform: rotate3d(0, 1, 1, 10deg);
+    }
+    66%{
+        transform: rotate3d(0, -1, -1, 10deg);
+    }
+    100%{
+        transform: rotate3d(0, 0, 0, 60deg);
+    }
+}
+
+body{
+    background-image: url(https://img.atwiki.jp/bluearchive/attach/90/129/014.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    touch-action: none;
+}
